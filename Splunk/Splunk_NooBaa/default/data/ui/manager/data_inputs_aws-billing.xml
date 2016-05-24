@@ -29,7 +29,7 @@
           <key name="dynamicOptions" type="dict">
             <key name="keyName">entry</key>
             <key name="entityField">'accounts'</key>
-            <key name="splunkSource">'/admin/splunk_ta_aws_accout_list/'</key>
+            <key name="splunkSource">'/admin/splunk_noobaa_account_list/'</key>
             <key name="splunkSourceParams" type="dict">
                 <key name="aws_account_service">'all'</key>
             </key>
@@ -65,7 +65,7 @@
           <key name="dynamicOptions" type="dict">
             <key name="keyName">entry</key>
             <key name="entityField">'buckets'</key>
-            <key name="splunkSource">'/admin/splunk_ta_aws_s3buckets/'</key>
+            <key name="splunkSource">'/admin/splunk_noobaa_s3buckets/'</key>
             <key name="splunkSourceParams" type="dict">
             	<key name="aws_account">form_defaults['aws_account']</key>
                 <key name="host_name">form_defaults['host_name']</key>
@@ -105,7 +105,7 @@
           <key name="dynamicOptions" type="dict">
             <key name="keyName">entry</key>
             <key name="entityField">'monthly_report'</key>
-            <key name="splunkSource">'/admin/splunk_ta_aws_billing_report_types/'</key>
+            <key name="splunkSource">'/admin/splunk_noobaa_billing_report_types/'</key>
             <key name="splunkSourceParams" type="dict">
             </key>
             <key name="splunkSourceEntity">'ReportTypesResultList'</key>
@@ -120,7 +120,7 @@
           <key name="dynamicOptions" type="dict">
             <key name="keyName">entry</key>
             <key name="entityField">'detail_report'</key>
-            <key name="splunkSource">'/admin/splunk_ta_aws_billing_report_types/'</key>
+            <key name="splunkSource">'/admin/splunk_noobaa_billing_report_types/'</key>
             <key name="splunkSourceParams" type="dict">
             </key>
             <key name="splunkSourceEntity">'ReportTypesResultList'</key>

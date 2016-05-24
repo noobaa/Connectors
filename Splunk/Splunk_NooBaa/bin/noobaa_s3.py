@@ -179,8 +179,8 @@ class Checkpointer(object):
         self._max_items = max_items
 
         start_offset = 0
-        if stanza_name.startswith('aws-s3://'):
-            start_offset = len('aws-s3://')
+        if stanza_name.startswith('noobaa-s3://'):
+            start_offset = len('noobaa-s3://')
 
         safe_filename_prefix = "".join([c if c.isalnum() else '_' for c in stanza_name[start_offset:start_offset + 20]])
         stanza_hexdigest = hashlib.md5("{}_{}".format(stanza_name, bucket_name)).hexdigest()

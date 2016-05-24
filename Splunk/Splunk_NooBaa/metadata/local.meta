@@ -2,23 +2,7 @@
 version = 6.2.5
 modtime = 1439879633.237847000
 
-[log_info/aws_billing]
-version = 6.2.5
-modtime = 1451815928.327062000
-
-[log_info/aws_cloudtrail]
-version = 6.2.5
-modtime = 1451815928.333121000
-
-[log_info/aws_cloudwatch]
-version = 6.2.5
-modtime = 1451815928.338837000
-
-[log_info/aws_config]
-version = 6.2.5
-modtime = 1451815928.343815000
-
-[log_info/aws_s3]
+[log_info/noobaa_s3]
 version = 6.2.5
 modtime = 1451815928.349152000
 
@@ -42,18 +26,3 @@ modtime = 1439880653.064189000
 [app/package/check_for_updates]
 version = 6.2.5
 modtime = 1439880653.065212000
-
-[app/credential%3Anoobaa_splunk%3A123%3A]
-owner = admin
-version = 6.2.5
-modtime = 1451460589.935840000
-
-[inputs/aws_s3%3A%2F%2Fnoobaa_104_197_149_245]
-owner = admin
-version = 6.2.5
-modtime = 1451461042.326842000
-
-[app/credential%3Anoobaa_splunk2%3A123%3A]
-owner = admin
-version = 6.2.5
-modtime = 1451815930.196441000

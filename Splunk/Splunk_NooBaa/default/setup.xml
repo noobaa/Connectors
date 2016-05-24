@@ -1,6 +1,6 @@
 <setup>
   <!-- iterative update in this block -->
-  <block title="Existing NooBaa accounts" endpoint="admin/splunk_ta_aws_setup_account_list/" entity="*" mode="iter">
+  <block title="Existing NooBaa accounts" endpoint="admin/splunk_noobaa_setup_account_list/" entity="*" mode="iter">
         <text>
         </text>
         <text>* To remove an existing account, select the account and click save. Refresh the page to reflect the changes. </text>
@@ -11,7 +11,7 @@
   </block>
 
 
-  <block title="Add New or Update NooBaa accounts" endpoint="admin/splunk_ta_aws_setup_account_new/" entity="*" mode="iter">
+  <block title="Add New or Update NooBaa accounts" endpoint="admin/splunk_noobaa_setup_account_new/" entity="*" mode="iter">
     <text>* To update an existing account's key id and secret key, type the existing name in the name field. &lt;br&gt;
         * Note: Only alphanumeric, space, dash, underscore and comma characters are supported for account names.
     </text>
@@ -33,7 +33,7 @@
   </block>
 
 
-    <block title="Enter your proxy server information" endpoint="admin/splunk_ta_aws_proxy/" entity="proxy" >
+    <block title="Enter your proxy server information" endpoint="admin/splunk_noobaa_proxy/" entity="proxy" >
        <text>Proxy configuration, in format username:password@host:port</text>
        <input field="enable">
             <label>enable proxy</label>
@@ -46,7 +46,7 @@
         </input>
     </block>
 
-    <block title="Log Level Setting" endpoint="admin/splunk_ta_aws_log_level/" entity="log_level">
+    <block title="Log Level Setting" endpoint="admin/splunk_noobaa_log_level/" entity="log_level">
        <text>Log level must be one of DEBUG, INFO, WARNING, ERROR or CRITICAL. Other text will be saved as INFO.&lt;br&gt;
              WARNING: It is recommended to restart splunkd after you change one or more log levels because only newly started processes will use newly set log levels. </text>
         <!--input field="aws_billing_log_level">
@@ -65,7 +65,7 @@
             <label>AWS Config</label>
             <type>text</type>
         </input-->
-        <input field="aws_s3_log_level">
+        <input field="noobaa_s3_log_level">
             <label>NooBaa S3 API</label>
             <type>text</type>
         </input>

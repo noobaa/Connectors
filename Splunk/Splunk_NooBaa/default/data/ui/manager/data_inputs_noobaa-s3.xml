@@ -1,16 +1,16 @@
-<endpoint name="data/inputs/aws_s3">
+<endpoint name="data/inputs/noobaa_s3">
   <header>NOOBAA S3 API</header>
   <breadcrumb>
     <parent hidecurrent="False">datainputstats</parent>
     <name i18ntag="">NOOBAA S3 API</name>
   </breadcrumb>
   <elements>
-    
+
     <element name="name" label="Input Name">
       <view name="list"/>
       <view name="create"/>
     </element>
-    
+
     <element name="sourceFields" type="fieldset">
       <key name="legend">NooBaa S3 REST gateway Configuration</key>
       <view name="list"/>
@@ -28,7 +28,7 @@
           <key name="dynamicOptions" type="dict">
             <key name="keyName">entry</key>
             <key name="entityField">'accounts'</key>
-            <key name="splunkSource">'/admin/splunk_ta_aws_accout_list/'</key>
+            <key name="splunkSource">'/admin/splunk_noobaa_account_list/'</key>
             <key name="splunkSourceParams" type="dict">
                 <key name="aws_account_service">'all'</key>
             </key>
@@ -127,7 +127,7 @@
           <view name="edit"/>
           <view name="create"/>
         </element>
-        
+
         <element name="character_set" type="textfield" label="Character set">
           <key name="exampleText">
               Specify the encoding used in your S3 files.
@@ -156,13 +156,13 @@
               </group_set>
           </onChange>
     </element>
-    
+
     <element name="advanced" type="fieldset" class="spl-mgr-advanced-options">
       <view name="list"/>
       <view name="edit"/>
       <view name="create"/>
       <elements>
-        
+
         <element name="intervalFields" type="fieldset">
           <key name="legend">Interval</key>
           <view name="edit"/>
@@ -177,7 +177,7 @@
                   <view name="create"/>
                 </element>
               </elements>
-        </element> 
+        </element>
 
         <element name="sourcetypeFields" type="fieldset">
           <view name="list"/>
@@ -256,7 +256,7 @@
               <view name="create"/>
             </element>
           </elements>
-        </element>  
+        </element>
         <element name="indexField" type="fieldset">
           <key name="legend">Index</key>
           <key name="helpText">Set the destination index for this source.</key>

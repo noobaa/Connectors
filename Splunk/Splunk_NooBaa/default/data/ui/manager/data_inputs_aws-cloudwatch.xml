@@ -27,7 +27,7 @@
           <key name="dynamicOptions" type="dict">
             <key name="keyName">entry</key>
             <key name="entityField">'accounts'</key>
-            <key name="splunkSource">'/admin/splunk_ta_aws_accout_list/'</key>
+            <key name="splunkSource">'/admin/splunk_noobaa_account_list/'</key>
             <key name="splunkSourceParams" type="dict">
                 <key name="aws_account_service">'all'</key>
             </key>
@@ -56,7 +56,7 @@
           <key name="dynamicOptions" type="dict">
           <key name="keyName">entry</key>
           <key name="entityField">'regions'</key>
-          <key name="splunkSource">'/admin/splunk_ta_aws_regions/'</key>
+          <key name="splunkSource">'/admin/splunk_noobaa_regions/'</key>
           <key name="splunkSourceParams" type="dict">
             <key name="aws_service">'cloudtrail'</key>
           </key>
@@ -85,7 +85,7 @@
           <key name="dynamicOptions" type="dict">
           <key name="keyName">entry</key>
           <key name="entityField">'metric_namespace'</key>
-          <key name="splunkSource">'/admin/splunk_ta_aws_namespaces/'</key>
+          <key name="splunkSource">'/admin/splunk_noobaa_namespaces/'</key>
           <key name="splunkSourceParams" type="dict">
             <key name="aws_region">form_defaults['aws_region']</key>
             <key name="aws_account">form_defaults['aws_account']</key>

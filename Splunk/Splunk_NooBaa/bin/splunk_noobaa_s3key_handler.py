@@ -18,7 +18,7 @@ import taaws.s3util
 from taaws.log import setup_logger
 from taaws.aws_accesskeys import AwsAccessKeyManager
 from taaws.s3util import connect_s3
-from splunk_ta_aws_s3buckets_handler import timed
+from splunk_noobaa_s3buckets_handler import timed
 logger = setup_logger(APPNAME + '-RestEndpoints', level=logging.DEBUG)
 
 
